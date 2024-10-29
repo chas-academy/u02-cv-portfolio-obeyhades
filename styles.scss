@@ -1,0 +1,228 @@
+@use "./Extra/color" as *;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    color: $link-color;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle, $background-gradient-start, $background-gradient-middle,$background-gradient-end );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.test{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.name{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-style: outset;
+    border-width: 1rem;
+    font-size: 7rem;
+    padding: 4rem 1rem;
+    margin: 13rem 13rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header{
+    width: 100%;
+    padding: 2rem;
+    background-color:$header-background;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+    nav {
+        display: flex;
+
+
+        .navbar__item{
+            color: $link-color;
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+
+            .navbar__links{
+                text-decoration: none;
+                font-size: 1rem;
+                color: $link-color;
+
+                 &:hover{
+                     color: $link-hover;
+                 }
+            }
+        }
+    }
+}
+  
+main{
+    display: flex;
+    
+    max-width: 1400px;
+    text-align: center;
+    padding: 4rem 2rem;
+    min-height: 100%;
+
+    
+
+    .main__container{
+        width: 100%;
+        
+    }
+    
+    h2{
+        margin-top: 8rem;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        color:$title-color; 
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        font-size: 1.3rem;
+        color: #f3f3f3;
+        padding-bottom: 2rem;
+
+    }
+    
+    .main__img{
+        padding-top: 1rem;
+    }
+
+}
+
+.page__two{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    min-height: 100%;
+    margin: 100px;
+    margin-top: 7rem;
+    text-align: center;   
+
+
+    h2{
+        color:$title-color;
+        font-size: 5rem;
+        margin-top: 41rem;
+    }
+
+
+    
+    table{
+        padding: 2rem;
+        border-spacing: 100px;
+        th{
+            color: $title-color;
+            font-size: 3.3rem;
+        }
+        td{
+            
+            border-style: double;
+            border-radius: 1%;
+            padding-top: 1rem;
+            color: $table-text;
+            font-size: 20px;
+            
+         }
+    }
+}
+
+
+.page__three{
+    min-height: 80%;
+    
+    width: 100%;
+    max-width: 1400px;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 3rem;
+
+    h2{
+        color: $title-color;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2.6rem;
+    }
+    h3{
+        color: $title-color;
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        font-size: 19px;
+    }
+
+}
+
+.image__going{
+    padding-bottom: 10rem;
+}
+
+footer{
+    
+    color:$title-color ;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#Abdu{
+    width: 18rem;
+    height: auto;
+    border-style: groove;
+    border-width: 1rem;
+
+}
+@media (max-width: 391px) { 
+
+
+.name{
+    margin: 0;
+    font-size: 33px;
+    text-align: center;
+}
+
+    header{
+        padding: 1rem;
+        flex-direction: column;
+    }
+}
+
+
+  
+
+
+
+
