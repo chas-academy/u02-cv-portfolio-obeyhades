@@ -18,22 +18,17 @@ html, body {
 }
 
 
-.test{
+
+    
+
+.name{
     height: 100vh;
     width: 100%;
     justify-content: center;
     display: flex;
     align-items: center;
-}
-.name{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    // border-style: outset;
-    border-width: 1rem;
-    font-size: 7rem;
-    padding: 4rem 1rem;
-    margin: 13rem 13rem;
+    text-align: center;
+    font-size: 4rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 header{
@@ -84,7 +79,7 @@ main{
     }
     
     h2{
-        margin-top: 16rem;
+        margin-top: 5.5rem;
         font-size: 4rem;
         display: flex;
         justify-content: center;
@@ -113,7 +108,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     min-height: 100%;
     text-align: center;   
     
@@ -201,22 +196,23 @@ footer{
 }
 @media (max-width: 391px) { 
 
-
-
-.name{
-    margin: 0;
-    font-size: 33px;
-    text-align: center;
-}
-
     header{
         padding: 1rem;
         flex-direction: column;
         display: flex;
-        
-       
-
     }
+   
+}
+
+
+@media(max-width: 800px){
+    .name{
+        font-size: 2rem;
+    }
+    
+}
+
+@media(max-width: 1070px){
     .page__two table{
         border-spacing: 12px;
         th{
@@ -230,8 +226,6 @@ footer{
         }
     }
 }
-
-
   
 
 
