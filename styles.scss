@@ -9,8 +9,6 @@
 
 html, body {
     scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
     color: $link-color;
     font-family: 'Montserrat', sans-serif;
     background: radial-gradient(circle, $background-gradient-start, $background-gradient-middle,$background-gradient-end );
@@ -21,7 +19,7 @@ html, body {
 
 
 .test{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -31,7 +29,7 @@ html, body {
     display: flex;
     justify-content: center;    
     align-items: center;
-    border-style: outset;
+    // border-style: outset;
     border-width: 1rem;
     font-size: 7rem;
     padding: 4rem 1rem;
@@ -73,21 +71,20 @@ header{
   
 main{
     display: flex;
-    
     max-width: 1400px;
     text-align: center;
     padding: 4rem 2rem;
     min-height: 100%;
+    margin-top: 3rem;
 
     
 
     .main__container{
         width: 100%;
-        
     }
     
     h2{
-        margin-top: 8rem;
+        margin-top: 16rem;
         font-size: 4rem;
         display: flex;
         justify-content: center;
@@ -118,25 +115,23 @@ main{
     justify-content: center;
     padding: 4rem 2rem;
     min-height: 100%;
-    margin: 100px;
-    margin-top: 7rem;
     text-align: center;   
+    
 
 
     h2{
         color:$title-color;
         font-size: 5rem;
-        margin-top: 41rem;
+        margin-top: 3rem;
     }
 
 
     
     table{
-        padding: 2rem;
         border-spacing: 100px;
         th{
             color: $title-color;
-            font-size: 3.3rem;
+            font-size: 3.4rem;
         }
         td{
             
@@ -145,7 +140,6 @@ main{
             padding-top: 1rem;
             color: $table-text;
             font-size: 20px;
-            
          }
     }
 }
@@ -208,6 +202,7 @@ footer{
 @media (max-width: 391px) { 
 
 
+
 .name{
     margin: 0;
     font-size: 33px;
@@ -217,6 +212,22 @@ footer{
     header{
         padding: 1rem;
         flex-direction: column;
+        display: flex;
+        
+       
+
+    }
+    .page__two table{
+        border-spacing: 12px;
+        th{
+            font-size: 1.5rem;
+            width: 10px;
+        }
+        td{
+            font-size: 12px;
+            width: 10px;
+            
+        }
     }
 }
 
